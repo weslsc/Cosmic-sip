@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Canvas | Art-Inspired Beverages</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#6B46C1',
+              secondary: '#F9A8D4',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-[url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2000')] bg-cover bg-fixed min-h-screen text-white">
+<custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
+            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm z-10"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2000')] bg-cover bg-center opacity-20"></div>
+            <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
+              <div class="w-64 h-64 rounded-full bg-blue-500/10 absolute animate-pulse" style="animation-delay: 0s;"></div>
+              <div class="w-96 h-96 rounded-full bg-purple-500/10 absolute animate-pulse" style="animation-delay: 1s;"></div>
+              <div class="w-128 h-128 rounded-full bg-pink-500/10 absolute animate-pulse" style="animation-delay: 2s;"></div>
+            </div>
+<div class="container mx-auto px-6 relative z-20 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-600">Cosmic Cannabis</span>
+</h1>
+                <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10 opacity-90">
+                    Intergalactic herbs infused with cosmic essence
+</p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#products" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-full font-medium transition-all">
+                        Explore Strains
+</a>
+                    <a href="#story" class="px-8 py-3 border-2 border-white/20 hover:border-blue-400 hover:text-blue-400 rounded-full font-medium transition-all">
+                        Our Story
+</a>
+                </div>
+</div>
+        </section>
+        <!-- Galactic Collection -->
+        <section id="products" class="py-20 bg-gradient-to-b from-gray-900/90 to-black">
+<div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">Galactic Strains</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto"></div>
+                    <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
+                    Cultivated with rare meteorite minerals and zero-gravity enhanced growth
+</p>
+                </div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Product 1 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 hover:border-blue-400/30 transition-all">
+                        <div class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded-full text-xs font-bold">BESTSELLER</div>
+                        <div class="h-64 overflow-hidden">
+                            <img 
+                                src="http://static.photos/abstract/640x360/101" 
+                                alt="Nebula Nectar"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+</div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Nebula Nectar</h3>
+                            <p class="text-gray-300 mb-4">Purple cosmic infusion with Andromeda berry and quasar essence</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-400 text-xl font-bold">$39.99</span>
+                                <button class="px-4 py-2 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-400 rounded-full text-sm font-medium transition-all">
+                                    Beam to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 hover:border-purple-500/30 transition-all">
+                        <div class="h-64 overflow-hidden">
+                            <img 
+                                src="http://static.photos/nebula/640x360/1337" 
+                                alt="Supernova Spark" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+</div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Supernova Spark</h3>
+                            <p class="text-gray-300 mb-4">Glowing golden elixir with supernova dust and solar flare citrus</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-purple-400 text-xl font-bold">$44.99</span>
+                                <button class="px-4 py-2 bg-purple-500/10 hover:bg-purple-500/20 border border-purple-400 rounded-full text-sm font-medium transition-all">
+                                    Beam to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 hover:border-blue-400/30 transition-all">
+                        <div class="h-64 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1581822261290-991b38693d1b?q=80&w=2000" 
+                                alt="Black Hole Brew"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+</div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Black Hole Brew</h3>
+                            <p class="text-gray-300 mb-4">Dark matter infused with mysterious singularity flavors (glows in UV light)</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-400 text-xl font-bold">$49.99</span>
+                                <button class="px-4 py-2 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-400 rounded-full text-sm font-medium transition-all">
+                                    Beam to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+</div>
+            </div>
+        </section>
+        <!-- Mission Log -->
+        <section id="story" class="py-20 relative">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2000')] bg-cover bg-center opacity-5"></div>
+<div class="container mx-auto px-6 relative">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Mission Log</h2>
+                    <p class="text-xl text-gray-300">
+                        Our journey began in zero gravity - crafting drinks that defy earthly limitations
+                    </p>
+                </div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <div class="absolute -top-6 -left-6 w-24 h-24 bg-primary rounded-full mix-blend-multiply opacity-20 blur-xl"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary rounded-full mix-blend-multiply opacity-20 blur-xl"></div>
+                        <img 
+                            src="http://static.photos/technology/640x360/404" 
+                            alt="Space Lab"
+                            class="relative rounded-2xl border border-gray-700/50 shadow-xl z-10"
+                        >
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">From Cosmos to Cup</h3>
+                        <p class="text-gray-300 mb-6">
+                            Founded by former NASA food scientists and astro-mixologists, Cosmic Sip began as an experiment aboard the International Space Station. 
+                            Our elixirs incorporate minerals from meteorites and flavors inspired by cosmic phenomena.
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            Each limited edition series is inspired by celestial events - from solar eclipses to comet trails, 
+                            capturing the essence of the universe in every bottle.
+                        </p>
+                        <a href="#" class="inline-flex items-center text-blue-400 font-medium group">
+                            Meet the Astronauts
+<i data-feather="arrow-right" class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Celestial Gallery -->
+        <section class="py-20 bg-black">
+<div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">Celestial Gallery</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto"></div>
+                    <p class="mt-4 text-gray-300 max-w-2xl mx-auto">Our cosmic creations captured through the lens of the Hubble telescope</p>
+                </div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="aspect-square overflow-hidden rounded-lg group">
+                        <img 
+                            src="http://static.photos/space/640x360/601" 
+                            alt="Cosmic Drink"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg group">
+                        <img 
+                            src="http://static.photos/nebula/640x360/602" 
+                            alt="Galactic Mix"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg group">
+                        <img 
+                            src="http://static.photos/star/640x360/603" 
+                            alt="Stellar Sip"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg group">
+                        <img 
+                            src="http://static.photos/astronomy/640x360/604" 
+                            alt="Planetary Pour"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg group">
+                        <img 
+                            src="http://static.photos/universe/640x360/605" 
+                            alt="Intergalactic Infusion"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg group">
+                        <img 
+                            src="http://static.photos/black/640x360/606" 
+                            alt="Singularity Sip"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg group">
+                        <img 
+                            src="http://static.photos/science/640x360/607" 
+                            alt="Lab Creation"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        >
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg group">
+                        <img 
+                            src="http://static.photos/technology/640x360/608" 
+                            alt="Space Tech"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        >
+                    </div>
+</div>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="py-20 relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20 z-0"></div>
+<div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl mx-auto bg-gray-900/80 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-12 text-center">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Join Our Space Program</h2>
+                    <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Subscribe for galactic updates and 15% light-years discount on your first order
+                    </p>
+<form class="max-w-md mx-auto flex gap-2">
+                        <input 
+                            type="email" 
+                            placeholder="Your email address" 
+                            class="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-full focus:outline-none focus:ring-2 focus:ring-primary"
+                        >
+                            <button 
+                                type="submit" 
+                                class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition-all"
+                            >
+                                Launch Subscription
+</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
